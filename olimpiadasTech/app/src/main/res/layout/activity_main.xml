@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:src="@drawable/logo_olimpiadas"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="100dp"
+    android:layout_centerHorizontal="true"
+    />
+
+
+    <EditText
+        android:id="@+id/nomeTime1"
+        android:hint="@string/digite_o_nome_do_time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        />
+
+    <EditText
+        android:id="@+id/nomeTime2"
+        android:hint="@string/digite_o_nome_do_time_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeTime1"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+<Button
+    android:id="@+id/continuarBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:text="@string/continuar"
+    android:layout_below="@+id/nomeTime2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    />
+
+</RelativeLayout>
+

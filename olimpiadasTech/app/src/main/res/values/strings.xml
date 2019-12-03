@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">olimpiadasTech</string>
+    <string name="continuar">Continuar</string>
+    <string name="digite_o_nome_do_time_2">Digite o nome do time 2</string>
+    <string name="digite_o_nome_do_time_1">Digite o nome do time 1</string>
+    <string name="escolha_o_esporte_que_desejam_jogar">Escolha o esporte que desejam jogar:</string>
+    <string name="futebol">Futebol</string>
+    <string name="basquete">Basquete</string>
+    <string name="v_lei">Vôlei</string>
+    <string name="t_nis_de_mesa">Tênis de mesa</string>
+</resources>

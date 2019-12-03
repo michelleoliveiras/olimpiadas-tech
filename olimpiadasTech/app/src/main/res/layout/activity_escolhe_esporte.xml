@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".escolheEsporte">
+
+    <TextView
+        android:id="@+id/tituloTela2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/escolha_o_esporte_que_desejam_jogar"
+        android:textSize="20sp"
+        android:layout_marginTop="85dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    // Bloco futebol
+
+    <ImageView
+        android:id="@+id/logoFutebol"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tituloTela2"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/futebol"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTela2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoFutebol"
+        android:layout_alignEnd="@id/logoBasquete"
+        android:text="@string/futebol"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/logoFutebol"
+        app:layout_constraintStart_toStartOf="@id/logoFutebol"
+        app:layout_constraintEnd_toEndOf="@id/logoFutebol"
+        />
+    //Fim bloco futebol
+
+
+    //Bloco basquete
+
+    <ImageView
+        android:id="@+id/logoBasquete"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_goneMarginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/logoFutebol"
+        android:src="@drawable/basquete"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloTela2"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoBasquete"
+        android:text="@string/basquete"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/logoBasquete"
+        app:layout_constraintEnd_toEndOf="@id/logoBasquete"
+        app:layout_constraintTop_toBottomOf="@id/logoBasquete"
+        />
+    //Fim bloco basquete
+
+    //Bloco volei
+
+    <ImageView
+        android:id="@+id/logoVolei"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoFutebol"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/volei"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoVolei"
+        android:text="@string/v_lei"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/logoVolei"
+        app:layout_constraintEnd_toEndOf="@id/logoVolei"
+        app:layout_constraintTop_toBottomOf="@id/logoVolei"
+        />
+    //Fim bloco volei
+
+    //Bloco tenis mesa
+
+    <ImageView
+        android:id="@+id/logoTenis"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/logoBasquete"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@id/logoVolei"
+        app:layout_constraintTop_toBottomOf="@id/logoBasquete"
+        android:src="@drawable/tenis" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoTenis"
+        android:text="@string/t_nis_de_mesa"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/logoTenis"
+        app:layout_constraintStart_toStartOf="@id/logoTenis"
+        app:layout_constraintEnd_toEndOf="@id/logoTenis"
+        />
+
+    //Fim bloco tenis mesa
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
