@@ -4,14 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".futebol">
+    tools:context=".futebol"
+    android:gravity="center"
+    android:background="#008040"
+    >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="placar futebol"
-        android:textAlignment="center"
-        android:layout_marginTop="300dp"
-        />
+    <RelativeLayout
+        android:id="@+id/bloco1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/menosTimeABtn"
+            android:layout_below="@id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#003319"
+            android:text="Desfazer"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/pontuacao1"
+            android:text="2"
+            android:layout_centerHorizontal="true"
+            android:textSize="100sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_below="@id/pontuacao1"
+            android:text="Time1"
+            android:layout_centerHorizontal="true"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="x"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="100sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/zerarBtn"
+            android:layout_width="wrap_content"
+            android:text="ZERAR"
+            android:background="#003319"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloco2"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/menosTimeBBtn"
+            android:layout_below="@id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Desfazer"
+            android:textSize="10sp"
+            android:textColor="#fff"
+            android:background="#003319"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/pontuacao2"
+            android:text="2"
+            android:layout_centerHorizontal="true"
+            android:textSize="100sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_below="@id/pontuacao2"
+            android:text="Time2"
+            android:layout_centerHorizontal="true"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
 
 </LinearLayout>
