@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Futebol"
-    android:gravity="center"
-    android:background="#008040"
-    >
+    tools:context=".Volei"
+    android:background="#2c89c4"
+    android:gravity="center">
+
 
     <RelativeLayout
         android:id="@+id/bloco1"
@@ -15,12 +15,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content">
 
-        <Button
+    <Button
             android:id="@+id/menosTime1Btn"
             android:layout_below="@id/time1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#003319"
+            android:background="#1a5275"
             android:text="Desfazer"
             android:textColor="#fff"
             android:textSize="10sp"
@@ -66,7 +66,7 @@
             android:id="@+id/zerarBtn"
             android:layout_width="wrap_content"
             android:text="ZERAR"
-            android:background="#003319"
+            android:background="#1a5275"
             android:textColor="#fff"
             android:layout_height="wrap_content"/>
 
@@ -87,7 +87,7 @@
             android:text="Desfazer"
             android:textSize="10sp"
             android:textColor="#fff"
-            android:background="#003319"
+            android:background="#1a5275"
             android:layout_marginTop="20dp"/>
 
         <TextView

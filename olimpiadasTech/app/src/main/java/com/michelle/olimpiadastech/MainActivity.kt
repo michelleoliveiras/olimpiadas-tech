@@ -3,14 +3,8 @@ package com.michelle.olimpiadastech
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
-import com.michelle.olimpiadastech.escolheEsporte as olimpiadastechEscolheEsporte
-import androidx.core.app.ComponentActivity
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-
+import java.sql.Time
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,8 +15,13 @@ class MainActivity : AppCompatActivity() {
 
     continuarBtn.setOnClickListener{
 
-        if (!nomeTime1.text.isEmpty() && !nomeTime2.text.isEmpty()) {
-            val intent = Intent(this, com.michelle.olimpiadastech.escolheEsporte::class.java)
+        val nomeTime1 = time1.text.toString()
+        val nomeTime2 = time2.text.toString()
+
+        if (!time1.text.isEmpty() && !time2.text.isEmpty()) {
+            val intent = Intent(this, EscolheEsporte::class.java)
+            intent.putExtra("TIME1", nomeTime1)
+            intent.putExtra("TIME2", nomeTime2)
             startActivity(intent)
         }
     }

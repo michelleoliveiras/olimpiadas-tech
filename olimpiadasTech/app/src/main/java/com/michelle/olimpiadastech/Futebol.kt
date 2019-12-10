@@ -4,14 +4,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_futebol.*
 
-class futebol : AppCompatActivity() {
+class Futebol : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_futebol)
 
-        pontuacao1.text="0"
-        pontuacao2.text="0"
+        pontuacao1.text = "0"
+        pontuacao2.text = "0"
+
+        val nomeTime1 = intent.getStringExtra("TIME1")
+        val nomeTime2 = intent.getStringExtra("TIME2")
+
+        time1.text = nomeTime1
+        time2.text = nomeTime2
 
         bloco1.setOnClickListener {
             val valorInicial = pontuacao1.text.toString()
@@ -30,7 +36,7 @@ class futebol : AppCompatActivity() {
             pontuacao2.text = "0"
         }
 
-        menosTimeABtn.setOnClickListener{
+        menosTime1Btn.setOnClickListener{
             val valorInicial = pontuacao1.text.toString()
             val novoValor = valorInicial.toInt() - 1
             pontuacao1.text = novoValor.toString()
@@ -39,7 +45,7 @@ class futebol : AppCompatActivity() {
                 pontuacao1.text="0"
         }
 
-        menosTimeBBtn.setOnClickListener{
+        menosTime2Btn.setOnClickListener{
             val valorInicial = pontuacao2.text.toString()
             val novoValor = valorInicial.toInt() - 1
             pontuacao2.text = novoValor.toString()
