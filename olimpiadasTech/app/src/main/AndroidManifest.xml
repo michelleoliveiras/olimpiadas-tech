@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Volei"></activity>
+        <activity android:name=".Basquete"></activity>
+        <activity android:name=".Volei" />
         <activity android:name=".Futebol" />
         <activity android:name=".EscolheEsporte" />
         <activity android:name=".MainActivity">

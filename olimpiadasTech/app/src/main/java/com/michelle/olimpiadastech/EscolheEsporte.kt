@@ -28,6 +28,11 @@ class EscolheEsporte : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        logoBasquete.setOnClickListener{
+            val intent = Intent (this, Basquete::class.java)
+            intent.putExtra("TIME1", nomeTime1)
+            intent.putExtra("TIME2", nomeTime2)
+            startActivity(intent)
+        }
     }
 }
