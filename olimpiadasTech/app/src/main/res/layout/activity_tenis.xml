@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Basquete"
+    tools:context=".Tenis"
     android:gravity="center"
-    android:background="#ec8115"
-    android:padding="10dp"
-    >
+    android:background="#E2583E"
+    android:padding="30dp">
 
     <RelativeLayout
         android:id="@+id/bloco1"
@@ -16,50 +15,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/mais1Btn1"
-            android:layout_below="@id/time1"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+1"
+        <TextView
+            android:id="@+id/placarSet1"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
             android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
-            />
-
-        <Button
-            android:id="@+id/mais2Btn1"
-            android:layout_toRightOf="@id/mais1Btn1"
-            android:layout_below="@id/time1"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+2"
-            android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
-            />
-
-        <Button
-            android:id="@+id/mais3Btn1"
-            android:layout_toRightOf="@id/mais2Btn1"
-            android:layout_below="@id/time1"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+3"
-            android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
-            />
-
-        <Button
-            android:id="@+id/desfazerTime1Btn"
-            android:layout_below="@id/mais3Btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#8d4d0c"
+            />
+
+        <Button
+            android:id="@+id/menosTime1Btn"
+            android:layout_below="@id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#712c1f"
             android:text="Desfazer"
             android:textColor="#fff"
             android:textSize="10sp"
@@ -73,7 +44,9 @@
             android:textSize="100sp"
             android:textColor="#fff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            />
 
         <TextView
             android:id="@+id/time1"
@@ -105,11 +78,9 @@
             android:id="@+id/zerarBtn"
             android:layout_width="wrap_content"
             android:text="ZERAR"
-            android:background="#8d4d0c"
+            android:background="#712c1f"
             android:textColor="#fff"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            />
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
@@ -120,53 +91,25 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/desfazerTime2Btn"
-            android:layout_below="@id/mais1Btn2"
+            android:id="@+id/menosTime2Btn"
+            android:layout_below="@id/time2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="Desfazer"
             android:textSize="10sp"
             android:textColor="#fff"
-            android:background="#8d4d0c"
+            android:background="#712c1f"
             android:layout_marginTop="20dp"/>
 
-        <Button
-            android:id="@+id/mais1Btn2"
-            android:layout_below="@id/time2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+1"
+        <TextView
+            android:id="@+id/placarSet2"
+            android:text="0"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
             android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
-            />
-
-        <Button
-            android:id="@+id/mais2Btn2"
-            android:layout_toRightOf="@id/mais1Btn2"
-            android:layout_below="@id/time2"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+2"
-            android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
-            />
-
-        <Button
-            android:id="@+id/mais3Btn2"
-            android:layout_toRightOf="@id/mais2Btn2"
-            android:layout_below="@id/time2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:background="#8d4d0c"
-            android:text="+3"
-            android:textColor="#fff"
-            android:textSize="10sp"
-            android:layout_marginTop="20dp"
             />
 
         <TextView
@@ -176,7 +119,8 @@
             android:textSize="100sp"
             android:textColor="#fff"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
 
         <TextView
             android:id="@+id/time2"

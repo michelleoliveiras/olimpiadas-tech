@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Volei"
     android:background="#2c89c4"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="30dp">
 
 
     <RelativeLayout

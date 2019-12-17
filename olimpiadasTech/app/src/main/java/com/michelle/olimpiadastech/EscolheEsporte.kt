@@ -34,5 +34,12 @@ class EscolheEsporte : AppCompatActivity() {
             intent.putExtra("TIME2", nomeTime2)
             startActivity(intent)
         }
+
+        logoTenis.setOnClickListener{
+            val intent = Intent (this, Tenis::class.java)
+            intent.putExtra("TIME1",nomeTime1)
+            intent.putExtra("TIME2", nomeTime2)
+            startActivity(intent)
+        }
     }
 }

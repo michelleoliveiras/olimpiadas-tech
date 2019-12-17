@@ -29,7 +29,7 @@ class Volei : AppCompatActivity() {
             val novoValor = pontuacaoInicial1 + 1
             pontuacao1.text = novoValor.toString()
 
-            if (pontuacaoInicial1 >= 21 && pontuacaoInicial1 >= pontuacaoInicial2 + 2) {
+            if (novoValor >= 21 && novoValor >= pontuacaoInicial2 + 2) {
                 Toast.makeText(this,"Fim de set! $nomeTime1 venceu",Toast.LENGTH_LONG).show()
                 pontuacao1.text="0"
                 pontuacao2.text="0"
@@ -41,7 +41,7 @@ class Volei : AppCompatActivity() {
                 Toast.makeText(this,"Fim de jogo! $nomeTime1 venceu a partida",Toast.LENGTH_LONG).show()
 
             if (set1 == 1 && set2 == 1)
-                if (pontuacaoInicial1 >= 15 && pontuacaoInicial1 >= pontuacaoInicial2 + 2){
+                if (novoValor >= 15 && novoValor >= pontuacaoInicial2 + 2){
                     Toast.makeText(this,"Fim de jogo! $nomeTime1 venceu a partida",Toast.LENGTH_LONG).show()
                     pontuacao1.text = "0"
                     pontuacao2.text = "0"
@@ -56,7 +56,7 @@ class Volei : AppCompatActivity() {
             val novoValor2 = pontuacaoInicial2 + 1
             pontuacao2.text = novoValor2.toString()
 
-            if (pontuacaoInicial2 >= 21 && pontuacaoInicial2 >= pontuacaoInicial1 + 2) {
+            if (novoValor2 >= 21 && novoValor2 >= pontuacaoInicial1 + 2) {
                 Toast.makeText(this,"Fim de set! $nomeTime2 venceu",Toast.LENGTH_LONG).show()
                 pontuacao1.text="0"
                 pontuacao2.text="0"
@@ -68,18 +68,20 @@ class Volei : AppCompatActivity() {
                 Toast.makeText(this,"Fim de jogo! $nomeTime2 venceu a partida",Toast.LENGTH_LONG).show()
 
             if (set1 == 1 && set2 == 1)
-                if (pontuacaoInicial2 >= 15 && pontuacaoInicial2 >= pontuacaoInicial1 + 2){
+                if (novoValor2 >= 15 && novoValor2 >= pontuacaoInicial1 + 2){
                     Toast.makeText(this,"Fim de jogo! $nomeTime2 venceu a partida",Toast.LENGTH_LONG).show()
                     pontuacao1.text = "0"
                     pontuacao2.text = "0"
-                    set1=0
-                    set2=0
                 }
         }
 
         zerarBtn.setOnClickListener{
             pontuacao1.text = "0"
             pontuacao2.text = "0"
+            set1=0
+            set2=0
+            placarSet1.text = set1.toString()
+            placarSet2.text = set2.toString()
         }
 
         menosTime1Btn.setOnClickListener{
